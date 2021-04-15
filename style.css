@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    margin: 0
+}
+
+img {
+    max-width: 100%;
+}
+
+#logo {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(44, 223, 28);
+    padding-bottom: 0.4rem;
+}
+
+#prim-imag {
+    height: 15rem;
+    background-image: url('imagen/tipos-rosas-para-plantar-rosa-moderna.jpg');
+    background-position: center 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-prin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1.5rem;
+    background-color: rgb(138, 7, 138);
+}
+
+.nav-prin > nav > a {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #f7f4f4;
+    display: none;
+}
+
+.nav-sup > nav > .botão {
+    color:rgb(44, 5, 238);
+    font-size: 2rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-prin > nav > a.active {
+    background-color: rgb(130, 255, 228);
+    border-radius: 0.2em;
+}
+
+
+.posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: calc(1000rem / 16);
+    margin: auto;
+}
+
+.posts > .artigo {
+    /* border: 1px solid;    */
+    margin: 1.5rem 0.5rem;
+    padding: 0.5rem;
+    width: calc(260rem / 16);
+    max-width: calc(300rem / 16);
+}
+
+.posts > .artigo > .imgen {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.posts > .artigo > .card-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.posts > .artigo > .card-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.composta {
+    background-color: rgb(17, 199, 199);
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.seç-ões {
+    padding: 0 0.5rem;
+    color: rgb(138, 7, 138);
+}
+
+.seç-ões> h2 {
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.seç-ões> img {
+    object-fit: cover;
+}
+
+.sec-ting {
+    max-width: calc(380rem / 16)
+}
+
+.sec-ting> article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.sec-ting> article > img {
+    margin-right: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.sec-ting> article > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.desta-que> img {
+    height: 10rem;
+    width: 80%;
+    margin: 1rem 2rem;
+}
+.desta-que> .p> .parfo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.desta-que> h2 {
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color:rgb(138, 7, 138);
+}
+
+aside{
+    background-color:teal;
+    color:rgb(138, 7, 138);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+}
+.container-novo{
+   width: 50%;
+}
+.paragrafo, a{
+    padding-bottom: 20px;
+    font-size: 1rem;
+    color: white;
+  
+}
+.address> article> ul{
+    list-style-type: none;
+    line-height: 2.5;
+    color: #774535;
+    padding: 0;
+}
+footer{
+    background:rgb(138, 7, 138);
+    color: white;
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+    .composta{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .sec-sing {
+        flex: 1;
+    }
+    .post-lg {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .nav-prin > nav > a {
+        display: inline-block;
+    }
+    .nav-prin > nav > .botão {
+        display: none;
+    }
+    #prim-imag {
+        height: 25rem;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .composta {
+        flex-wrap: nowrap;
+    }
+    .composta> .sec-col {
+        min-width: 25%;
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .composta > .post-lg {
+        min-width: 50%;
+        width: 50%;
+    }
+    .sec-sing {
+        flex: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .posts {
+        flex-wrap: nowrap;
+    }
